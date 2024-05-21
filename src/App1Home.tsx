@@ -25,6 +25,9 @@ export default function App1Home() {
       <br></br>
 
       <CounterButton></CounterButton>
+
+      <h2>H2 in app1 fuchsia-300, Counter button in home-remote</h2>
+
     </div>
   );
 }
