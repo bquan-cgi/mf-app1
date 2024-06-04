@@ -12,6 +12,7 @@ export default defineConfig({
       exposes: {
         "./App1Home": "./src/App1Home",
         "./App1Content": "./src/App1Content",
+        "./CounterButton": "./src/CounterButton",
       },
       remotes: {
         mainApp: "http://localhost:5001/assets/remoteEntry.js",
