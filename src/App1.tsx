@@ -1,7 +1,5 @@
 import { Link, Outlet } from "react-router-dom";
-import { defineCustomElements } from "@group-ui/group-ui-react/node_modules/@group-ui/group-ui/dist/components";
 
-void defineCustomElements();
 
 export default function App1() {
   return (
