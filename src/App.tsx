@@ -1,10 +1,11 @@
-import MainLayout from "mainApp/MainLayout";
+import { BrowserRouter } from "react-router-dom";
+import App1Layout from "./App1Layout";
 
 function App() {
   return (
-    <>
-      <MainLayout></MainLayout>
-    </>
+    <BrowserRouter>
+      <App1Layout></App1Layout>
+    </BrowserRouter>
   );
 }
 

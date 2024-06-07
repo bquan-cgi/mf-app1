@@ -10,16 +10,16 @@ export default defineConfig({
       name: "app1",
       filename: "remoteEntry.js",
       exposes: {
-        "./App1": "./src/App1",
         "./App1Home": "./src/App1Home",
         "./App1Content": "./src/App1Content",
         "./App1Detail": "./src/App1Detail",
         "./CounterButton": "./src/CounterButton",
+        "./App1Layout": "./src/App1Layout",
       },
       remotes: {
-        mainApp: "http://localhost:5001/assets/remoteEntry.js",
+        shellApp: "http://localhost:5001/assets/remoteEntry.js",
       },
-      shared: ["react", "react-dom", "react-router-dom"],
+      shared: ["react", "react-dom", "react-router-dom", "@group-ui/group-ui-react"],
     }),
   ],
   build: {
