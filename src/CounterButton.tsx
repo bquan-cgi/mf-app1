@@ -10,7 +10,7 @@ export default function CounterButton() {
   return (
     <div className="bg-amber-100 px-2 m-3 border-dashed border-2 border-green-500">
       <p className="italic">
-        remote Groupui1010Button from app 1
+        This is a remote Group UI Button from app 1
       </p>
       <Groupui1010Button
         className="font-button"
