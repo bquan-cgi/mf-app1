@@ -12,11 +12,13 @@ export default defineConfig({
       exposes: {
         "./CounterButton": "./src/CounterButton",
         "./App1Layout": "./src/App1Layout",
+        "./store": "./src/store",
+
       },
       remotes: {
         shellApp: "http://localhost:5001/assets/remoteEntry.js",
       },
-      shared: ["react", "react-dom", "react-router-dom", "@group-ui/group-ui-react"],
+      shared: ["react", "react-dom", "react-router-dom", "@group-ui/group-ui-react", "jotai"],
     }),
   ],
   build: {
