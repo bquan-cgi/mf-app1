@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --port 3001 --strictPort",
-    "build": "vite build",
+    "build": "tsc && vite build",
     "preview": "vite preview --port 3001 --strictPort",
     "serve": "vite preview --port 3001 --strictPort",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
@@ -15,6 +15,7 @@
     "@group-ui/group-ui-assets": "https://assets.groupui.vwapps.run/latest/packages/group-ui-assets.tgz",
     "@group-ui/group-ui-react": "https://groupui.vwapps.run/specific/10.1.0/versioned/group-ui-react.tgz",
     "jotai": "^2.8.3",
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.23.1"

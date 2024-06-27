@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 
 void defineCustomElements();
 
-export default function CounterButton(props : CounterButtonProps) {
+export default function CounterButton1({greeting}: CounterButtonProps) {
   const [count, setCount] = useCount();
 
   return (
@@ -15,20 +15,20 @@ export default function CounterButton(props : CounterButtonProps) {
         className="font-button"
         onClick={() => setCount((count) => count + 1)}
       >
-        Hi {props.gender} {props.greeting}, count of CounterButton is {count}
+        Hi {greeting}, count of CounterButton is {count}
       </Groupui1010Button>
     </div>
   );
 }
 
-/* 
-CounterButton.propTypes  = {
-  greeting: PropTypes.string.isRequired,   
-  gender: PropTypes.string,   
+
+/* CounterButton1.propTypes  = {
+  greeting: PropTypes.string.isRequired
 }  
+
  */
 
-interface CounterButtonProps {
-  greeting: string
-  gender?: string
+type CounterButtonProps = {
+  greeting: string;
+  gender?: string;
 }
